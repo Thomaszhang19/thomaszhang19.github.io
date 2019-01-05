@@ -59,9 +59,9 @@
     line-height: 120px;
     color: #fa9200;
 }
-.cb-slideshow li:nth-child(1) span { background-image: url(../images/6.jpg) }
+.cb-slideshow li:nth-child(1) span { background-image: url(https://i.ibb.co/0ZfQDF9/1.jpg) }
 .cb-slideshow li:nth-child(2) span {
-    background-image: url(../images/5.jpg);
+    background-image: url(https://i.ibb.co/sgxh21Q/IMG-2696.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -69,7 +69,7 @@
     animation-delay: 6s;
 }
 .cb-slideshow li:nth-child(3) span {
-    background-image: url(../images/4.jpg);
+    background-image: url(https://i.ibb.co/stKQ2kJ/IMG-2349.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -85,7 +85,7 @@
     animation-delay: 18s;
 }
 .cb-slideshow li:nth-child(5) span {
-    background-image: url(../images/2.jpg);
+    background-image: url(https://i.ibb.co/5TfdHbQ/IMG-2353.jpg);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
@@ -93,7 +93,7 @@
     animation-delay: 24s;
 }
 .cb-slideshow li:nth-child(6) span {
-    background-image: url(../images/1.jpg);
+    background-image: url(https://i.ibb.co/3RrqKz0/IMG-2640);
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
