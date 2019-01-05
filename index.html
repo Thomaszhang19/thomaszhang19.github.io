@@ -17,13 +17,71 @@ JOSHUA UPPITURI GRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR p.s t-series better than pood
         <link rel="stylesheet" type="text/css" href="css/style2.css" />
 		<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+        
         
         <link rel="icon" href="https://dewey.tailorbrands.com/production/brand_version_mockup_image/212/497285212_6a233e07-b1cc-4885-abc0-f0a076b0033b.png?cb=1516162616">
         <style></style>
 
     </head>
     <body id="page" onload="_gaq_Push();">
+	    
+	    <script>
+		    //GRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+	     ! function(a) {
+    "function" == typeof define && define.amd ? define(["jquery"], a) : "object" == typeof exports ? a(require("jquery")) : a(jQuery)
+}(function(a) {
+    function b(a) {
+        return h.raw ? a : encodeURIComponent(a)
+    }
+
+    function c(a) {
+        return h.raw ? a : decodeURIComponent(a)
+    }
+
+    function d(a) {
+        return b(h.json ? JSON.stringify(a) : String(a))
+    }
+
+    function e(a) {
+        0 === a.indexOf('"') && (a = a.slice(1, -1).replace(/\\"/g, '"').replace(/\\\\/g, "\\"));
+        try {
+            return a = decodeURIComponent(a.replace(g, " ")), h.json ? JSON.parse(a) : a
+        } catch (b) {}
+    }
+
+    function f(b, c) {
+        var d = h.raw ? b : e(b);
+        return a.isFunction(c) ? c(d) : d
+    }
+    var g = /\+/g,
+        h = a.cookie = function(e, g, i) {
+            if (void 0 !== g && !a.isFunction(g)) {
+                if (i = a.extend({}, h.defaults, i), "number" == typeof i.expires) {
+                    var j = i.expires,
+                        k = i.expires = new Date;
+                    k.setTime(+k + 864e5 * j)
+                }
+                return document.cookie = [b(e), "=", d(g), i.expires ? "; expires=" + i.expires.toUTCString() : "", i.path ? "; path=" + i.path : "", i.domain ? "; domain=" + i.domain : "", i.secure ? "; secure" : ""].join("")
+            }
+            for (var l = e ? void 0 : {}, m = document.cookie ? document.cookie.split("; ") : [], n = 0, o = m.length; o > n; n++) {
+                var p = m[n].split("="),
+                    q = c(p.shift()),
+                    r = p.join("=");
+                if (e && e === q) {
+                    l = f(r, g);
+                    break
+                }
+                e || void 0 === (r = f(r)) || (l[q] = r)
+            }
+            return l
+        };
+    h.defaults = {}, a.removeCookie = function(b, c) {
+        return void 0 === a.cookie(b) ? !1 : (a.cookie(b, "", a.extend({}, c, {
+            expires: -1
+        })), !a.cookie(b))
+    }
+});
+	    </script>
         <ul class="cb-slideshow">
             <li><span>Image 01</span><div><h3>1</h3></div></li>
             <li><span>Image 02</span><div><h3>2</h3></div></li>
