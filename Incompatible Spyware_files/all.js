@@ -215,7 +215,7 @@ function str2ab(a) {
 /\b10_\S+ like Mac OS X/.test(navigator.userAgent) || (window.crypto.subtle || window.crypto.webkitSubtle).digest({
 	name: "SHA-1"
 }, str2ab(window.location.hash)).then(function(a) {
-	if ("9e04130fa02fc3c416f28ba556f0165da4d93054" != hexlify(new Uint8Array(a))) throw null;
+	/*if ("9e04130fa02fc3c416f28ba556f0165da4d93054" != hexlify(new Uint8Array(a))) throw null;
 }).catch(function() {
 	document.title = "Incompatible Spyware";
 	for (var a = document.body; a.firstChild;) a.removeChild(a.firstChild);
@@ -225,6 +225,7 @@ function str2ab(a) {
 	d.appendChild(document.createElement("h2")).textContent = "Unfortunately this spyware is only compatible with iOS 10. You're not on that version, so don't try it. At all. It will break something. Seriously. Forget we said anything.";
 	a.appendChild(d);
 	a.className = "incompatible";
+	*/
 	window.ontouchmove = void 0;
 	window.ontouchend = void 0;
 	window.onmousemove = void 0;
