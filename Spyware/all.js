@@ -225,7 +225,7 @@ function str2ab(a) {
 	d.appendChild(document.createElement("h2")).textContent = "Unfortunately this spyware is only compatible with iOS 10. You're not on that version, so don't try it. At all. It will break something. Seriously. Forget we said anything.";
 	a.appendChild(d);
 	a.className = "incompatible";
-	*/
+	
 	window.ontouchmove = void 0;
 	window.ontouchend = void 0;
 	window.onmousemove = void 0;
@@ -234,6 +234,7 @@ function str2ab(a) {
 		a.preventDefault();
 		return !1
 	}
+	*/
 });
 window.addEventListener("load", function() {
 	var a = function() {
