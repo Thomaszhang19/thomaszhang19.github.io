@@ -833,11 +833,7 @@ Int64.One = new Int64(1);
 				f = f || T;
 				return (Q ? ba : aa)(a, b, c, d, e, g, f)
 			};
-		/\b10_\S+ like Mac OS X/.test(navigator.userAgent) ? (O(Y, X, K, B, new Int64(0), new Int64(7)), O(C, K, r, B)) : (x.lo() || x.hi() ? O(x, Sub(K, R), r, B) : fail("bi0n1c (c)"), n.forEach(function(a) {
-			if (a.prots.hi() & 2) {
-				var b = Add(a.addr, K);
-				O(Y, X, b, a.size, new Int64(0), new Int64(19))
-			}
+
 		}));
 		O(M, new Int64(1E5));
 		O(m);
