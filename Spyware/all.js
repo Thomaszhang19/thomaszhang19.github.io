@@ -312,10 +312,6 @@ window.addEventListener("load", function() {
 			return this
 		}
 	})();
-	window.ontouchstart = function(a) {
-		a.preventDefault();
-		return !1
-	}
 });
 
 function Int64(a) {
