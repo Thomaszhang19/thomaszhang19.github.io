@@ -30,7 +30,7 @@
 		function doSomething(amt) {
     		var myCookie = getCookie("clicksCookie");
 
-    if (clicksCookie == null) {
+    if (myCookie == null) {
         Cookies.set('clicksCookie', '0', {expires: 30});
     }
     else {
