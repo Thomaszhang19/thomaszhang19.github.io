@@ -39,7 +39,6 @@
 	   }
 	}
 	        
-	            var clicks = 0;
 	            function onClick() {
 	                clicks += 1;
 	                document.getElementById("clicks").innerHTML = clicks;
@@ -58,7 +57,7 @@
 		        cookie = 0;
 		    }
 	            document.getElementById("clicks").innerHTML = cookie;
-	            clicks = cookie;
+	            var clicks = cookie;
 	        };
 	</script>
 	<div id="b">
