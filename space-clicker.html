@@ -1,71 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport ">
-	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATJohAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlGbdgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdeqXAAAAAAAAAAAAAAAAAEyaFwF26q8AAAAAAAAAAAAAAAAAderVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB16pcAAAAAAAAAAAFPml4MmfHhAAAAAAAAAAAAderEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC5Xw+gAAAAAAdOqpF7j3/wAAAAAZwPn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf0fv/C5Tw+h3M+/8l4///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWLBcAFiwvAnrreweL7u0QpPP6G8/6/yXj//8l4///Itj9/xOu9f0Hie75BH7skQAwXzIAFiwWAAAAAAAAAAAAAAAAABYsEgAXLCEAdepMBYTtsAiM7/gl4///JeP//wmQ8PUHiO7FAXbqWgEXLCUAFiwSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAl4///Dp3y9hzK+vwh1/3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATrvX9AAAAAAJ667AWtfb7AAAAABSw9fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeOvyAAAAAAAAAAACUZt5CY/v0gAAAAAAAAAAAHXq1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAderVAAAAAAAAAAAAAAAAAEyaIgB16qkAAAAAAAAAAAAAAAAAderVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABT5piAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEyaFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA73cAAPdvAAD6XwAA/D8AAPAHAAD4HwAA/D8AAPpfAAD3bwAA73cAAP//AAD//wAA//8AAA==" rel="icon" type="image/x-icon" />
-	<link rel="stylesheet" href="stylesheet.css">
+	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATJohAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlGbdgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdeqXAAAAAAAAAAAAAAAAAEyaFwF26q8AAAAAAAAAAAAAAAAAderVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB16pcAAAAAAAAAAAFPml4MmfHhAAAAAAAAAAAAderEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC5Xw+gAAAAAAdOqpF7j3/wAAAAAZwPn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf0fv/C5Tw+h3M+/8l4///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWLBcAFiwvAnrreweL7u0QpPP6G8/6/yXj//8l4///Itj9/xOu9f0Hie75BH7skQAwXzIAFiwWAAAAAAAAAAAAAAAAABYsEgAXLCEAdepMBYTtsAiM7/gl4///JeP//wmQ8PUHiO7FAXbqWgEXLCUAFiwSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAl4///Dp3y9hzK+vwh1/3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATrvX9AAAAAAJ667AWtfb7AAAAABSw9fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeOvyAAAAAAAAAAACUZt5CY/v0gAAAAAAAAAAAHXq1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAderVAAAAAAAAAAAAAAAAAEyaIgB16qkAAAAAAAAAAAAAAAAAderVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABT5piAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEyaFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA73cAAPdvAAD6XwAA/D8AAPAHAAD4HwAA/D8AAPpfAAD3bwAA73cAAP//AAD//wAA//8AAA==" rel="icon" type="image/x-icon">
+	<link href="stylesheet.css" rel="stylesheet">
 	<title>Space Clicker</title>
 </head>
 <body onload="restoreAmount();">
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-	<script src="jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script>
-        function getCookie(name) {
-    	    var dc = document.cookie;
-	    	var prefix = name + "=";
-	    	var begin = dc.indexOf("; " + prefix);
-	    	if (begin == -1) {
-				begin = dc.indexOf(prefix);
-        		if (begin != 0) return null;
-    		}
-    		else {
-        		begin += 2;
-        		var end = document.cookie.indexOf(";", begin);
-        		if (end == -1) {
-        			end = dc.length;
-        		}
-    		}
-    		return decodeURI(dc.substring(begin + prefix.length, end));
-		} 
+	       function getCookie(name) {
+	           var dc = document.cookie;
+	           var prefix = name + "=";
+	           var begin = dc.indexOf("; " + prefix);
+	           if (begin == -1) {
+	               begin = dc.indexOf(prefix);
+	               if (begin != 0) return null;
+	           }
+	           else {
+	               begin += 2;
+	               var end = document.cookie.indexOf(";", begin);
+	               if (end == -1) {
+	                   end = dc.length;
+	               }
+	           }
+	           return decodeURI(dc.substring(begin + prefix.length, end));
+	       } 
 
-		function doSomething(amt) {
-    		var myCookie = getCookie("clicksCookie");
+	       function doSomething(amt) {
+	           var myCookie = getCookie("clicksCookie");
 
-    if (myCookie == null) {
-        Cookies.set('clicksCookie', '0', {expires: 30});
-    }
-    else {
-         Cookies.set('clicksCookie', amt, {expires: 30});
-    }
-}
-		 
-	         var clicks = 0;
-	         function onClick() {
-	             clicks += 1;
-	             document.getElementById("clicks").innerHTML = clicks;
-		     doSomething(clicks);
-		     Cookies.set('utma', '29348752693875293475927346279e', {expires: 30});
-	         };
-		 
-		 function reset() {
-	             clicks = 0;
-	             document.getElementById("clicks").innerHTML = clicks;
-		     doSomething(clicks);
-		 };
-		 
-		 function restoreAmount() {
-			 var cookie = Cookies.get("clicksCookie");
-	         document.getElementById("clicks").innerHTML = cookie;
-		 }
- 	</script>
+	   if (myCookie == null) {
+	       Cookies.set('clicksCookie', '0', {expires: 30});
+	   }
+	   else {
+	        Cookies.set('clicksCookie', amt, {expires: 30});
+	   }
+	}
+	        
+	            var clicks = 0;
+	            function onClick() {
+	                clicks += 1;
+	                document.getElementById("clicks").innerHTML = clicks;
+	            doSomething(clicks);
+	            };
+	        
+	        function reset() {
+	                clicks = 0;
+	                document.getElementById("clicks").innerHTML = clicks;
+	            doSomething(clicks);
+	        };
+	        
+	        function restoreAmount() {
+	            var cookie = Cookies.get("clicksCookie");
+	            document.getElementById("clicks").innerHTML = cookie;
+	        clicks = cookie;
+	        }
+	</script>
 	<div id="b">
-		<h1 style="text-align: center; font-size: 69px; ">𝕊𝕡𝕒𝕔𝕖 ℂ𝕝𝕚𝕔𝕜𝕖𝕣</h1>
+		<h1 style="text-align: center; font-size: 69px;">𝕊𝕡𝕒𝕔𝕖 ℂ𝕝𝕚𝕔𝕜𝕖𝕣</h1>
 	</div>
 	<div class="bg">
 		<div id="a">
-			<button class="myButton" onclick="onClick()" type="button">Click Me!</button>
-			<button class="myButton" onclick="reset()" type="button"> Reset </button>
-			
+			<button class="myButton" onclick="onClick()" type="button">Click Me!</button> <button class="myButton" onclick="reset()" type="button">Reset</button>
 			<h3 style="text-align: center; color: white;">Or Press Space!</h3>
 			<h1 style="text-align: center; color: white;">Clicks: <a id="clicks">0</a></h1>
 		</div>
