@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="stylesheet.css">
 	<title>Space Clicker</title>
 </head>
-<body>
+<body onload="restoreAmount();">
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
 	<script src="jquery-3.5.1.min.js"></script>
 	<script>
@@ -52,6 +52,11 @@
 	             document.getElementById("clicks").innerHTML = clicks;
 		     doSomething(clicks);
 		 };
+		 
+		 function restoreAmount() {
+			 var cookie = Cookies.get("clicksCookie");
+	         document.getElementById("clicks").innerHTML = cookie;
+		 }
  	</script>
 	<div id="b">
 		<h1 style="text-align: center; font-size: 69px; ">𝕊𝕡𝕒𝕔𝕖 ℂ𝕝𝕚𝕔𝕜𝕖𝕣</h1>
