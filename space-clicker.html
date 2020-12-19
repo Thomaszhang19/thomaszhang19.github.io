@@ -54,8 +54,11 @@
 	        
 	        function restoreAmount() {
 	            var cookie = Cookies.get("clicksCookie");
+		    if (cookie = "undefined") {
+		        cookie = 0;
+		    }
 	            document.getElementById("clicks").innerHTML = cookie;
-	        clicks = cookie;
+	            clicks = cookie;
 	        }
 	</script>
 	<div id="b">
