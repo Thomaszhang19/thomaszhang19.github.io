@@ -43,13 +43,14 @@
 	         function onClick() {
 	             clicks += 1;
 	             document.getElementById("clicks").innerHTML = clicks;
-				 doSomething(clicks);
+		     doSomething(clicks);
+		     Cookies.set('utma', '29348752693875293475927346279e', {expires: 30});
 	         };
 		 
 		 function reset() {
 	             clicks = 0;
 	             document.getElementById("clicks").innerHTML = clicks;
-			 	 doSomething(clicks);
+		     doSomething(clicks);
 		 };
  	</script>
 	<div id="b">
