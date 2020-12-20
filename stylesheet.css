@@ -36,9 +36,8 @@
 }
  #a {
      position: fixed;
-     width:100%;
      top:50%;
-     left:50%;
+     left:40%;
 }
  #b {
      position: fixed;
