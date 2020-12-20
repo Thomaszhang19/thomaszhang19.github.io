@@ -37,6 +37,7 @@
  #a {
      margin:0 auto;
      display: block;
+     width: 500px;
 }
  #b {
      position: fixed;
