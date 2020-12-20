@@ -35,10 +35,13 @@
      background-size: cover;
 }
  #a {
-     position: absolute;
-     top:50%;
-     left:40%;
-}
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #FFFF00;
+    padding: 10px;
+ }
  #b {
      position: fixed;
      background-color:rgba(192,192,192,0.3);
