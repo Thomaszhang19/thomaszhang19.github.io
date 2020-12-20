@@ -36,7 +36,8 @@
 }
  #a {
      position: absolute;
-     margin:0 auto
+     margin:0 auto;
+     display: block;
 }
  #b {
      position: fixed;
