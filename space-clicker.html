@@ -40,7 +40,6 @@
 	}
 	        
 	            function onClick() {
-			clicks = cookie;
 	                clicks++;
 	                document.getElementById("clicks").innerHTML = clicks;
 	            doSomething(clicks);
@@ -53,12 +52,13 @@
 	        };
 	        
 	        function restoreAmount() {
+				var clicks = 0;
 	            var cookie = Cookies.get("clicksCookie");
-		    if (cookie == null) {
-		        cookie = 0;
-		    }
+		    	if (cookie == null) {
+		        	cookie = 0;
+		    	}
 	            document.getElementById("clicks").innerHTML = cookie;
-	            var clicks = cookie;
+	            clicks = cookie;
 	        };
 	</script>
 	<div id="b">
