@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport">
+	<meta charset="UTF-8">
 	<link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATJohAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlGbdgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdeqXAAAAAAAAAAAAAAAAAEyaFwF26q8AAAAAAAAAAAAAAAAAderVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB16pcAAAAAAAAAAAFPml4MmfHhAAAAAAAAAAAAderEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC5Xw+gAAAAAAdOqpF7j3/wAAAAAZwPn/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAf0fv/C5Tw+h3M+/8l4///AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWLBcAFiwvAnrreweL7u0QpPP6G8/6/yXj//8l4///Itj9/xOu9f0Hie75BH7skQAwXzIAFiwWAAAAAAAAAAAAAAAAABYsEgAXLCEAdepMBYTtsAiM7/gl4///JeP//wmQ8PUHiO7FAXbqWgEXLCUAFiwSAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAl4///Dp3y9hzK+vwh1/3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAATrvX9AAAAAAJ667AWtfb7AAAAABSw9fwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABeOvyAAAAAAAAAAACUZt5CY/v0gAAAAAAAAAAAHXq1QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAderVAAAAAAAAAAAAAAAAAEyaIgB16qkAAAAAAAAAAAAAAAAAderVAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABT5piAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEyaFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AAD//wAA73cAAPdvAAD6XwAA/D8AAPAHAAD4HwAA/D8AAPpfAAD3bwAA73cAAP//AAD//wAA//8AAA==" rel="icon" type="image/x-icon">
 	<link href="stylesheet.css" rel="stylesheet">
 	<title>Space Clicker</title>
@@ -9,60 +10,7 @@
 <body onload="restoreAmount();">
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script> 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script>
-	       var cookie;
-		   var clicks;
-	       function getCookie(name) {
-	           var dc = document.cookie;
-	           var prefix = name + "=";
-	           var begin = dc.indexOf("; " + prefix);
-	           if (begin == -1) {
-	               begin = dc.indexOf(prefix);
-	               if (begin != 0) return null;
-	           }
-	           else {
-	               begin += 2;
-	               var end = document.cookie.indexOf(";", begin);
-	               if (end == -1) {
-	                   end = dc.length;
-	               }
-	           }
-	           return decodeURI(dc.substring(begin + prefix.length, end));
-	       } 
-
-	       function doSomething(amt) {
-	           var myCookie = getCookie("clicksCookie");
-
-	   if (myCookie == null) {
-	       Cookies.set('clicksCookie', '0', {expires: 30});
-	   }
-	   else {
-	        Cookies.set('clicksCookie', amt, {expires: 30});
-	   }
-	}
-	        
-	            function onClick() {
-	                clicks++;
-	                document.getElementById("clicks").innerHTML = clicks;
-	            doSomething(clicks);
-	            };
-	        
-	        function reset() {
-	                clicks = 0;
-	                document.getElementById("clicks").innerHTML = clicks;
-	            doSomething(clicks);
-	        };
-	        
-	        function restoreAmount() {
-				clicks = 0;
-	            cookie = Cookies.get("clicksCookie");
-		    	if (cookie == null) {
-		        	cookie = 0;
-		    	}
-	            document.getElementById("clicks").innerHTML = cookie;
-	            clicks = cookie;
-	        };
-	</script>
+	<script src="script.js"></script>
 	<div id="b">
 		<h1 style="text-align: center; font-size: 69px;">𝕊𝕡𝕒𝕔𝕖 ℂ𝕝𝕚𝕔𝕜𝕖𝕣</h1>
 	</div>
