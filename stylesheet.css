@@ -53,7 +53,8 @@
     position: absolute;
     left: 50%;
     top: 50%;
+    width: 30%;
+    height: 100%;
     transform: translate(-50%, -50%);
-    background-color: #696969;
- 
+    background-color: #696969; 
 }
