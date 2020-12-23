@@ -49,3 +49,11 @@
      height: 25%;
      z-index: 100;
 }
+#metal {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #696969;
+ 
+}
