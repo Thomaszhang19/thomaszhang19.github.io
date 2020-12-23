@@ -38,7 +38,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 20%;
+    width: 70%;
     transform: translate(-50%, -50%);
     border: 5px solid #929292;
     padding: 10px;
@@ -54,7 +54,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 70%;
+    width: 30%;
     height: 100%;
     transform: translate(-50%, -50%);
     background-color: #696969; 
